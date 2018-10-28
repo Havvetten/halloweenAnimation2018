@@ -1,0 +1,38 @@
+#mummy{
+    position: absolute;
+    width: 100px;
+    top: 500px;
+    left: 200px;
+    opacity: 0.1;
+    
+    animation-name: mummyAttack;
+    animation-duration: 30s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes mummyAttack{
+    0%{
+        width: 1px;
+        height: 2px;
+        top: 665px;
+        left: 240px;
+        opacity: 0.2;
+    }
+    99%{
+        width: 100px;
+        height: 200px;
+        top: 500px;
+        left: 200px;
+        opacity: 0.8;
+        
+    }
+    100%{
+        width: 0px;
+        height: 800px;
+        left: 240px;
+        top: -100px;
+        opacity: 1;
+        
+    }
+}

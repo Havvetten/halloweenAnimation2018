@@ -1,0 +1,156 @@
+#sky{
+    position: absolute;
+    width: 1200px;
+    bottom: 200px;
+}
+
+
+/*STARFIELD*/
+
+.starfield{
+    position: absolute;
+    width: 1200px;
+}
+#starfield1{
+    opacity: 0.4;
+    animation-name: blinkingStarfield;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#starfield2{
+    opacity: 0.8;
+    animation-name: blinkingStarfield;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes blinkingStarfield{
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+
+#moon{
+    position: absolute;
+    width: 250px;
+    top: 50px;
+    left: 50px;
+}
+#moon:hover ~ #three-pumpkins1{
+}
+
+
+
+.clouds{
+    position: absolute;
+    width: 1200px;
+    user-select: none;
+    pointer-events: none;
+}
+#cloud1{
+    bottom: 0px;
+    opacity: 0.2;
+    left: 1200px;
+    
+    animation-name: clouds1;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes clouds1{
+    0%{
+        bottom: 0;
+        left: -1200px;
+    }
+    100{
+        bottom: 0;
+        left: 1200px;
+    }
+}
+
+#cloud2{
+    bottom: -100px;
+    opacity: 0.1;
+    right: 1200px;
+    
+    animation-name: clouds2;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes clouds2{
+    0%{
+        bottom: -100;
+        right: -1200px;
+    }
+    100{
+        bottom: -200;
+        right: 1200px;
+    }
+}
+
+#cloud3{
+    position: absolute;
+    width: 250px;
+    opacity: 0.2;
+    top: 100px;
+    left: 1200px;
+    user-select: none;
+    pointer-events: none;
+    
+    animation-name: cloud3;
+    animation-duration: 150s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud3{
+    0%{
+        width: 250px;
+        opacity: 0.2;
+        top: 100px;
+        left: -100px;
+        
+    }
+    100%{
+        top: 100px;
+        left: 1200px;
+        
+    }
+}
+#cloud4{
+    position: absolute;
+    width: 300px;
+    opacity: 0.1;
+    top: 250;
+    right: 1200px;
+    user-select: none;
+    pointer-events: none;
+    
+    animation-name: cloud4;
+    animation-duration: 150s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud4{
+    0%{
+        width: 300px;
+        opacity: 0.2;
+        top: 100px;
+        right: -100px;
+        
+    }
+    100%{
+        top: 250px;
+        right: 1200px;
+        
+    }
+}

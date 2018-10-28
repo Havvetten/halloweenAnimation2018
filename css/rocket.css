@@ -1,0 +1,54 @@
+#rocket{
+    position: absolute;
+    width: 150px;
+    top: 40px;
+    left: 526px;
+    
+    animation-name: rocketTakeoff;
+    animation-duration: 10s;
+    animation-delay: 120s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes rocketTakeoff{
+    0%{
+        width: 150px;
+        top: 40px;
+        left: 526px;
+    }
+    100%{
+        width: 150px;
+        top: -800px;
+        left: 526px;
+    }
+}
+#rocketModule{
+    position: absolute;
+    width: 40px;
+    top: -100px;
+    left: 200px;
+    
+    animation-name: landingModule;
+    animation-duration: 10s;
+    animation-delay: 130s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes landingModule{
+    0%{
+        width: 40px;
+        top: -100px;
+        left: 500px;
+        transform: rotate(0deg);
+    }
+    100%{
+        width: 20px;
+        top: 80px;
+        left: 200px;
+        transform: rotate(30deg);
+        
+    }
+}
+

@@ -1,0 +1,409 @@
+body{
+    margin: 0;
+    background-color: rgb(0,12,50);
+}
+#main-container{
+    width: 1200px;
+    height: 768px;
+    margin: auto; /* asdafsd */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: midnightblue;
+    position: relative;
+    overflow: hidden; /* sjuler alt utenfor blocken */
+}
+
+#title{
+    position: absolute;
+    width: 200px;
+    top: 50px;
+    left: 950px;
+    
+    animation-name: title;
+    animation-duration: 30s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+@keyframes title{
+    0%{
+        width: 200px;
+        top: 600px;
+        left: 400px;
+    }
+    80%{
+        width: 600px;
+        top: 50px;
+        left: 300px;
+    }
+    100%{
+        width: 200px;
+        top: 50px;
+        left: 950px;
+    }
+}
+
+/*GROUND*/
+
+.ground{
+    position: absolute;
+    bottom: 0;
+    width: 1200px;
+}
+#mainGround{
+    bottom: -80px;
+}
+#ground1{
+    bottom: -100px;
+    left: 200px;
+    animation-name: ground1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes ground1{
+    0%{
+        bottom: 0;
+        left: 0;
+    }
+    50%{
+        bottom: -50px;
+        left: 0;
+    }
+    100%{
+        bottom: -100px;
+        left: 200px;
+    }
+}
+
+#ground2{
+    bottom: -120px;
+    right: 500px;
+    animation-name: ground2;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+@keyframes ground2{
+    0%{
+        bottom: 0;
+        right: 0;
+        
+    }
+    100%{
+        bottom: -120px;
+        right: 500px;
+    }
+}
+
+#ground3{
+    bottom: -180px;
+    animation-name: ground3;
+    animation-duration: 25s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+@keyframes ground3{
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: -180px;
+    }
+}
+
+#ground4{
+    bottom: -160px;
+    animation-name: ground4;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+@keyframes ground4{
+    0%{
+        bottom: 0;
+        
+    }
+    100%{
+        bottom: -160px;
+    }
+}
+
+#ground5{
+    bottom: -180px;
+    animation-name: ground5;
+    animation-duration: 15s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+@keyframes ground5{
+    0%{
+        bottom: 0;
+        
+    }
+    100%{
+        bottom: -180px;
+    }
+}
+
+#ground6{
+    bottom: -200px;
+    animation-name: ground6;
+    animation-duration: 20s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+@keyframes ground6{
+    0%{
+        bottom: 0;
+        
+    }
+    100%{
+        bottom: -200px;
+    }
+}
+
+
+
+#sky{
+    position: absolute;
+    width: 1200px;
+    bottom: 200px;
+}
+
+
+/*STARFIELD*/
+
+.starfield{
+    position: absolute;
+    width: 1200px;
+}
+#starfield1{
+    opacity: 0.4;
+    animation-name: blinkingStarfield;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#starfield2{
+    opacity: 0.8;
+    animation-name: blinkingStarfield;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes blinkingStarfield{
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+/*MOON*/
+
+#moon{
+    position: absolute;
+    width: 250px;
+    top: 50px;
+    left: 50px;
+    
+    animation-name: moon;
+    animation-duration: 15s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+@keyframes moon{
+    0%{
+        width: 100px;
+        top: 400px;
+        left: 100px;
+    }
+    10{
+        width: 250px;
+        top: 50px;
+        left: 50px;
+    }
+}
+/*CLOUDS*/
+
+.clouds{
+    position: absolute;
+    width: 1200px;
+}
+#cloud1{
+    bottom: 0px;
+    opacity: 0.2;
+    left: 1200px;
+    
+    animation-name: clouds1;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes clouds1{
+    0%{
+        bottom: 0;
+        left: -1200px;
+    }
+    100{
+        bottom: 0;
+        left: 1200px;
+    }
+}
+
+#cloud2{
+    bottom: -100px;
+    opacity: 0.1;
+    right: 1200px;
+    
+    animation-name: clouds2;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes clouds2{
+    0%{
+        bottom: -100;
+        right: -1200px;
+    }
+    100{
+        bottom: -200;
+        right: 1200px;
+    }
+}
+
+#cloud3{
+    position: absolute;
+    width: 250px;
+    opacity: 0.1;
+    top: 100px;
+    left: 1200px;
+    
+    animation-name: cloud3;
+    animation-duration: 150s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud3{
+    0%{
+        width: 250px;
+        opacity: 0.2;
+        top: 100px;
+        left: -100px;
+        
+    }
+    100%{
+        top: 100px;
+        left: 1200px;
+        
+    }
+}
+#cloud4{
+    position: absolute;
+    width: 300px;
+    opacity: 0.1;
+    top: 250;
+    right: 1200px;
+    
+    animation-name: cloud4;
+    animation-duration: 150s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud4{
+    0%{
+        width: 300px;
+        opacity: 0.2;
+        top: 100px;
+        right: -100px;
+        
+    }
+    100%{
+        top: 250px;
+        right: 1200px;
+        
+    }
+}
+
+/*CASTLE */
+.castle{
+    position: absolute;
+}
+#castleBottom{
+    width: 600px;
+    top: 250px;
+    left: 300px;
+    
+    animation-name: castleBottom;
+    animation-duration: 20s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+@keyframes castleBottom{
+    0%{
+        width: 50px;
+        top: 470px;
+        left: 667px;
+    }
+    50%{
+        width: 150px;
+        top: 530px;
+        left: 600px;
+    }
+    100%{
+    width: 600px;
+    top: 250px;
+    left: 300px;
+    }
+}
+
+#castleTower{
+    width: 230px;
+    top: 134px;
+    left: 487px;
+    
+    animation-name: castleTower;
+    animation-duration: 40s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+@keyframes castleTower{
+    0%{
+        width: 230px;
+        top: 1900px;
+        left: 487px;
+    }
+    100%{
+        width: 230px;
+        top: 134px;
+        left: 487px;
+    }
+}
+#castleTop{
+    width: 150px;
+    top: 40px;
+    left: 527px;
+    
+    animation-name: castleTop;
+    animation-duration: 40s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+@keyframes castleTop{
+    0%{
+        width: 50px;
+        top: 2400px;
+        left: 557px;
+
+    }
+    100%{
+        width: 150px;
+        top: 40px;
+        left: 527px;
+    }
+}

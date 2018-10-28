@@ -1,0 +1,57 @@
+.castle{
+    position: absolute;
+}
+#castleBottom{
+    width: 600px;
+    top: 250px;
+    left: 300px;
+}
+#castleTower{
+    width: 230px;
+    top: 134px;
+    left: 487px;
+    
+    animation-name: castleTowerDown;
+    animation-duration: 5s;
+    animation-delay: 110s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes castleTowerDown{
+    0%{
+        width: 230px;
+        top: 134px;
+        left: 487px;
+    }
+    100%{
+        width: 230px;
+        top: 370px;
+        left: 487px;
+    }
+}
+
+#castleTop{
+    width: 150px;
+    top: 40px;
+    left: 527px;
+    
+    animation-name: castleTopDown;
+    animation-duration: 5s;
+    animation-delay: 105s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes castleTopDown{
+    0%{
+        width: 150px;
+        top: 40px;
+        left: 527px;
+    }
+    100%{
+        width: 50px;
+        top: 400px;
+        left: 580px;
+    }
+}
