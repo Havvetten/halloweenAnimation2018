@@ -1,18 +1,37 @@
 #dracula{
     position: absolute;
-    width: 100px;
-    top: 550px;
-    left: 350px;
-    visibility: hidden;
+    width: 30px;
+    height: 1px;
+    top: 670px;
+    left: 750px;
+    visibility: visible;
+    
+    animation-name: draculaMotion;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
 }
-#zombie{
-    position: absolute;
-    width: 70px;
-    top: 550px;
-    left: 600px;
-    visibility: hidden;
+#windowLight2:hover ~ #dracula{
+    animation-play-state: running;
 }
-
+@keyframes draculaMotion{
+    0%{
+        width: 30px;
+        height: 1px;
+        top: 670px;
+        left: 750px;
+        visibility: visible;
+        opacity: 1;
+    }
+    100%{
+        width: 100px;
+        height: 130px;
+        top: 550px;
+        left: 750px;
+    }
+}
 #wolfman{
     position: absolute;
     width: 60px;
@@ -21,9 +40,11 @@
     
     animation-name: wolfAttack;
     animation-duration: 10s;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-play-state: paused;
+    
 }
 
 @keyframes wolfAttack{
@@ -42,13 +63,23 @@
         left: 40px;
         opacity: 0.8
     }
-    100%{
+    90%{
         width: 60px;
         height: 120px;
         top: 590px;
         left: 40px;
         opacity: 1;
         visibility: visible;
-        
     }
+    100%{
+        width: 60px;
+        height: 120px;
+        top: 590px;
+        left: -100px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+#moon:hover ~ #wolfman{
+    animation-play-state: running;
 }

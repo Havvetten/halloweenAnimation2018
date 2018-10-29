@@ -3,4 +3,39 @@
     width: 100px;
     top: 150px;
     left: 740px;
+    visibility: hidden;
+    
+    animation-name: ghost;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
 }
+@keyframes ghost{
+    0%{
+        width: 0px;
+        top: 0px;
+        left: 460px;
+        visibility: visible;
+        opacity: 0.2;
+    }
+    50%{
+        width: 100px;
+        top: 150px;
+        left: 740px;
+        opacity: 0.9;
+    }
+    100%{
+        width: 10px;
+        top: -50px;
+        left: 1540px;
+        opacity: 0.2;
+    }
+}
+#windowLight:hover ~ #ghost{
+    animation-play-state: running;
+}
+
+

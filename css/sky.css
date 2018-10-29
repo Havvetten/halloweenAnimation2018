@@ -45,10 +45,6 @@
     top: 50px;
     left: 50px;
 }
-#moon:hover ~ #three-pumpkins1{
-}
-
-
 
 .clouds{
     position: absolute;

@@ -1,0 +1,28 @@
+#horseman{
+    position: absolute;
+    width: 125px;
+    opacity: 0.5;
+    bottom: -50px;
+    right: -150px;
+    
+}
+@keyframes flyingHorseman{
+    0%{
+        bottom: -50px;
+        right: -150px;
+        visibility: visible;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        bottom: 750px;
+        right: 1200px;
+    }
+}

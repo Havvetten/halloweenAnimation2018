@@ -6,7 +6,7 @@
     
     animation-name: rocketTakeoff;
     animation-duration: 10s;
-    animation-delay: 120s;
+    animation-delay: 60s;
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -31,7 +31,7 @@
     
     animation-name: landingModule;
     animation-duration: 10s;
-    animation-delay: 130s;
+    animation-delay: 70s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;

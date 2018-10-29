@@ -407,3 +407,115 @@ body{
         left: 527px;
     }
 }
+        /* SHIELD */
+
+#shield{
+    position: absolute;
+    width: 65px;
+    bottom: 310px;
+    left: 570px;
+    visibility: hidden;
+    animation-name: shieldOpacity;
+    animation-duration: 2s;
+    animation-delay: 35s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes shieldOpacity{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    90%{
+        opacity: 0.9;
+        visibility: visible;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+        /* BUTTON */
+#buttonpic{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 300px;
+    right: 90px;
+    visibility: hidden;
+    
+    animation-name: buttonmove;
+    animation-duration: 4s;
+    animation-delay: 40s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes buttonmove{
+    0%{
+        bottom: 300px;
+        width: 0px;
+        height: 0px;
+        visibility: visible;
+    }
+    25%{
+        bottom: 300px;
+        width: 120px;
+        height: 120px;
+        visibility: visible;
+    }
+    50%{
+        bottom: 300px;
+        width: 80px;
+        height: 80px;
+        visibility: visible;
+    }
+    75%{
+        bottom: 300px;
+        width: 120px;
+        height: 120px;
+        visibility: visible;
+    }
+    100%{
+        bottom: 300px;
+        width: 100px;
+        height: 100px;
+        visibility: visible;
+    }
+}
+#buttontext{
+    position: absolute;
+    color: yellow;
+    bottom: 400px;
+    right: 100px;
+    font-family: ;
+    visibility: hidden;
+    
+    animation-name: buttontextmove;
+    animation-duration: 2s;
+    animation-delay: 41s;
+    animation-fill-mode: forwards;
+}
+@keyframes buttontextmove{
+    0%{
+        opacity: 0;
+        visibility: visible;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    40%{
+        opacity: 0.4;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(1080deg);
+        visibility: visible;
+    }
+    
+}

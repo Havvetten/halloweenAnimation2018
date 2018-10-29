@@ -1,0 +1,40 @@
+#text1{
+    position: absolute;
+    color: yellow;
+    z-index: 1;
+    right: 10px;
+    
+    animation-name: textOpacity;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+#text2{
+    position: absolute;
+    color: yellow;
+    z-index: 1;
+    right: 10px;
+    top: 20px;
+    
+    animation-name: textOpacity;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+#text3{
+    position: absolute;
+    color: yellow;
+    z-index: 1;
+    right: 10px;
+    top: 40px;
+    
+    animation-name: textOpacity;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+@keyframes textOpacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

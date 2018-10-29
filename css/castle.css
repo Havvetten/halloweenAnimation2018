@@ -13,7 +13,7 @@
     
     animation-name: castleTowerDown;
     animation-duration: 5s;
-    animation-delay: 110s;
+    animation-delay: 50s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -38,7 +38,7 @@
     
     animation-name: castleTopDown;
     animation-duration: 5s;
-    animation-delay: 105s;
+    animation-delay: 45s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -54,4 +54,19 @@
         top: 400px;
         left: 580px;
     }
+}
+/* SHIELD */
+
+#shield{
+    position: absolute;
+    width: 65px;
+    bottom: 310px;
+    left: 570px;
+    visibility: visible;
+}
+#shield:hover ~ #horseman{
+    
+    animation-name: flyingHorseman;
+    animation-duration: 3s;
+    animation-timing-function: linear;
 }
